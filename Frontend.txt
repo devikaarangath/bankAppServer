@@ -1,0 +1,41 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      API CALLING
+
+9 create a services
+   -> to make api call
+   -> ng g s services/api
+10 API call -httpClientModule (module)
+   -> import in app.module.ts 
+11 Dependency injection
+  -> to share data between components
+  -> eg: api.service -> register component

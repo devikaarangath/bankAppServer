@@ -1,0 +1,51 @@
+
+
+
+                       Backend For Bankapp
+                
+        1. create a Bankapp Backend folder
+        2. create package.json file - npm init
+        3. create index.js file as the entry point for the server app
+        4. install express - npm i express
+        5. import express in index.js
+        6. using express , create an application : express()
+        7. setup port number for server application : server app.listen()
+        8. install cors (cross-origin resourse sharing (CORS))
+             - To share data with different applications - npm i cors 
+        9. import cors in index.js
+        10. use cors in server app  : serverapp.use(cors())
+        11. parse json data  to js in server app : use express.json()
+        12.resolving client requests
+                          server-app.http-method('path',callback function()=>{
+                            response send back to client
+                          })
+        13.auto compailation - npm i -g nodemon
+        14.install postman for backend testing
+        15.connecting with mongodb database
+         ->mongoose (library)
+         16.install mongoose - npm i mongoose
+         17 create a folder services, inside it create a file- db.js and logic.js
+         18 in db.js
+           ->import mongoose
+           ->define connection string
+           ->create model and schema
+           ->export model
+        19 in logic.js
+           ->create logic for api call
+           ->export the function
+        20 Authentication using JSON web token(jwt token)
+          -> It is JSON object which is used to securely
+        ->Install npm i jsonwebtoken
+        ->To generate token - sign() -logic->login()-> token generate
+        ->Using JSON Web token, generate token for user who logged successful
+        ->import jwt token in logic.js
+        ->verify token, when client request after successful login
+           ->login -> token generated
+           ->getBalance -> + append token ->? verify?
+
+        21 middleware
+           -> control request response cycle
+           -> arguments -> req,res,next 
+           Types
+            1. application specific middleware
+            2. router specific middleware
